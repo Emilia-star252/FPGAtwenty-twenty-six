@@ -1,0 +1,51 @@
+#!/bin/sh
+# /etc/init.d/S99hmi -- start the Qt HMI on /dev/fb0 at boot (Buildroot init script)
+#
+# install:
+#   cp S99hmi /etc/init.d/ && chmod 755 /etc/init.d/S99hmi
+#
+# the HMI is launched only when /dev/fb0 exists (i.e. the anlogic-vdmafb driver
+# probed successfully), otherwise we leave the console alone.
+
+HMI_DIR=/opt/hmi
+LOG=/var/log/hmi.log
+
+case "$1" in
+    start)
+        printf "Starting HMI: "
+        if [ ! -e /dev/fb0 ]; then
+            echo "no /dev/fb0, skipped"
+            exit 0
+        fi
+        if [ ! -x "$HMI_DIR/run_hmi.sh" ]; then
+            echo "no $HMI_DIR/run_hmi.sh, skipped"
+            exit 0
+        fi
+        # wait for the power service port to open (up to 10 s), keep going anyway
+        n=0
+        while [ $n -lt 20 ]; do
+            if netstat -an 2>/dev/null | grep -q ':5000 .*LISTEN'; then break; fi
+            n=$((n+1)); sleep 0.5
+        done
+        cd "$HMI_DIR" || exit 1
+        start-stop-daemon -S -b -m -p /var/run/hmi.pid \
+            -x "$HMI_DIR/run_hmi.sh" -- >>"$LOG" 2>&1
+        echo "OK"
+        ;;
+    stop)
+        printf "Stopping HMI: "
+        start-stop-daemon -K -p /var/run/hmi.pid -x "$HMI_DIR/run_hmi.sh" 2>/dev/null
+        killall hmi 2>/dev/null
+        echo "OK"
+        ;;
+    restart)
+        "$0" stop
+        sleep 1
+        "$0" start
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
+exit 0
