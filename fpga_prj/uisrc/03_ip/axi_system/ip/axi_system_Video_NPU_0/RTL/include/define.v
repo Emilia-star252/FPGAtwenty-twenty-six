@@ -1,0 +1,7 @@
+`define ALL_OPERATOR_axi_system_Video_NPU_0
+`define NN_ACTIVATE_axi_system_Video_NPU_0
+`define NN_POOLING_axi_system_Video_NPU_0
+`define NN_ROUTE_axi_system_Video_NPU_0
+`define NN_SHORTCUT_axi_system_Video_NPU_0
+`define NN_UPSAMPLE_axi_system_Video_NPU_0
+`define SOFT_NN_axi_system_Video_NPU_0

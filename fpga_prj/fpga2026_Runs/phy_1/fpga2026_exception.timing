@@ -1,0 +1,1794 @@
+Created by          : Tang Dynasty Release_2026.1_SP2
+                    : Copyright (c) 2012-2026 Anlogic Inc.
+Generated           : Sat Oct 31 10:19:30 2026
+
+Top Model           : DCDC_top
+Device              : DR1M90GEG400
+Speed               : 2
+STA coverage        : 99.99%
+Constraint File     : E:/FPGA_2026/fpga_prj/uisrc/04_pin/fpga2026.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         1            1            0            0   set_multicycle_path -setup -end 8 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+		        42           42            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 2
+		        24           24            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 2
+		         2            2            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 2
+		         2            2            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 2
+		         1            1            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 2
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         1            1            0            0   set_multicycle_path -hold -end 7 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+
+Status of timing exceptions
+--------------------------------------------------
+
+MCP/SMD Details
+--------------------
+
+
+Constraint     :   set_multicycle_path -setup -end 8 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_multicycle_path -hold -end 7 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 2
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           42
+Dominated      :           42,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 2
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           24
+Dominated      :           24,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 2
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            2
+Dominated      :            2,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 2
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            2
+Dominated      :            2,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 2
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Details on timing exceptions
+--------------------------------------------------
+
+Timing details for constraint:
+	set_multicycle_path -setup -end 8 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+	set_multicycle_path -hold -end 7 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_multicycle_path -setup -end 8 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+set_multicycle_path -hold -end 7 -from [get_ports {ad_dout_a ad_dout_b}] -to [get_regs {u_adc/shift_a* u_adc/shift_b*}]
+
+Type           :     MCP
+
+Statistics:
+Max            : SWNS     12.944ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      1.750ns, HTNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 12.944ns
+Begin Point         : ad_dout_a (rising edge triggered by clock adc_io_budget  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : u_adc/shift_a_reg[0]_syn_2.imf (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 80.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@80.000ns - adc_io_budget rising@0.000ns }
+Data Path Delay     : 68.389ns (cell 64.231ns (93%), net 4.158ns (7%))
+Clock Skew          : 1.401ns
+Logic Level         : 2 ( PAD=1  LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+input               T16                63.000         63.000          pin: ad_dout_a
+net (fo=1)                              0.000         63.000          net: ad_dout_a,  ../../uisrc/01_rtl/DCDC_top.v(48)
+                                                                      pin: ad_dout_a_syn_2.ipad
+PAD                 x123y063            0.998    f    63.998       1  pin: ad_dout_a_syn_2.di
+net (fo=1)                              4.158         68.156          net: ad_dout_a_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(48)
+                                                                      pin: u_adc/shift_a_reg[0]_syn_2.imf
+LUT2 (reg)          x023y039z7          0.233    f    68.389       2  net: u_adc/shift_a[0],  ../../uisrc/03_ip/AD7606/uispi7606.v(86)
+--------------------------------------------------------------------  ---------------
+Arrival                                               68.389               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.957          0.957          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.070          1.027          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119           -3.075         -2.048          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              1.765         -0.283          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.290          0.007          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.554          0.561          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkin
+SCLK                x079y019z0          0.000          0.561          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkout
+net (fo=4781)                           0.840          1.401          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_0_l_bk1_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_adc/shift_a_reg[0]_syn_2.clk
+capture edge                           80.000    r    81.401               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068         81.333               
+clock uncertainty                       0.000         81.333               
+clock pessimism                         0.000         81.333               
+--------------------------------------------------------------------  ---------------
+Required                                              81.333               
+--------------------------------------------------------------------  ---------------
+Slack                                                 12.944               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.750ns
+Begin Point         : ad_dout_a (rising edge triggered by clock adc_io_budget  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : u_adc/shift_a_reg[0]_syn_2.imf (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { adc_io_budget rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 2.465ns (cell 0.516ns (20%), net 1.949ns (80%))
+Clock Skew          : 0.673ns
+Logic Level         : 2 ( PAD=1  LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+input               T16                 0.000          0.000          pin: ad_dout_a
+net (fo=1)                              0.000          0.000          net: ad_dout_a,  ../../uisrc/01_rtl/DCDC_top.v(48)
+                                                                      pin: ad_dout_a_syn_2.ipad
+PAD                 x123y063            0.405    r     0.405       1  pin: ad_dout_a_syn_2.di
+net (fo=1)                              1.949          2.354          net: ad_dout_a_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(48)
+                                                                      pin: u_adc/shift_a_reg[0]_syn_2.imf
+LUT2 (reg)          x023y039z7          0.111    r     2.465       2  net: u_adc/shift_a[0],  ../../uisrc/03_ip/AD7606/uispi7606.v(86)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.465               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.406          0.406          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.039          0.445          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119           -1.680         -1.235          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.938         -0.297          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.158         -0.139          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.312          0.173          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkin
+SCLK                x079y019z0          0.000          0.173          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkout
+net (fo=4781)                           0.500          0.673          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_0_l_bk1_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_adc/shift_a_reg[0]_syn_2.clk
+capture edge                            0.000    r     0.673               
+--------------------------------------------------------------------  ---------------
+hold                                    0.042          0.715               
+clock uncertainty                       0.000          0.715               
+clock pessimism                         0.000          0.715               
+--------------------------------------------------------------------  ---------------
+Required                                               0.715               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.750               
+
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 2
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 2
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      0.734ns, STNS      0.000ns,         0 Viol Endpoints,        42 Total Endpoints,        42 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.734ns
+Begin Point         : debug_hub_top/U_0_register/ip_ctrl_reg[23]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_control_reg[21]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 1.198ns (cell 0.316ns (26%), net 0.882ns (74%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_register/ip_ctrl_reg[23]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x088y116z5          0.181    f     0.181          pin: debug_hub_top/U_0_register/ip_ctrl_reg[23]_syn_2.oqb
+net (fo=1)                              0.882          1.063          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[23],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[21]_syn_2.imb
+reg                 x087y116z5          0.135    r     1.198          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[23],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.198               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[21]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.734               
+
+Slack               : 0.845ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[36]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[36]_syn_2.ima (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 1.087ns (cell 0.310ns (28%), net 0.777ns (72%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[36]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x087y119z6          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[36]_syn_2.oqa
+net (fo=1)                              0.777          0.952          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[36],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[36]_syn_2.ima
+reg                 x088y119z2          0.135    r     1.087          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[36],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.087               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[36]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.845               
+
+Slack               : 0.856ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[3]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[2]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 1.076ns (cell 0.316ns (29%), net 0.760ns (71%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[3]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x088y117z0          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[3]_syn_2.oqb
+net (fo=1)                              0.760          0.941          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[2],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[2]_syn_2.imb
+reg                 x088y117z6          0.135    r     1.076          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[2],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.076               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[2]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.856               
+
+Slack               : 0.940ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[27]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_control_reg[27]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.992ns (cell 0.310ns (31%), net 0.682ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[27]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x088y112z6          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[27]_syn_2.oqa
+net (fo=1)                              0.682          0.857          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[27],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[27]_syn_2.imb
+reg                 x088y112z3          0.135    r     0.992          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[27],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.992               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[27]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.940               
+
+Slack               : 0.942ns
+Begin Point         : debug_hub_top/U_0_register/ip_ctrl_reg[30]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[30]_syn_2.ima (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.990ns (cell 0.316ns (31%), net 0.674ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_register/ip_ctrl_reg[30]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x084y113z3          0.181    f     0.181          pin: debug_hub_top/U_0_register/ip_ctrl_reg[30]_syn_2.oqb
+net (fo=1)                              0.674          0.855          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[30],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[30]_syn_2.ima
+reg                 x084y113z4          0.135    r     0.990          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[30],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.990               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[30]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.942               
+
+Slack               : 0.961ns
+Begin Point         : debug_hub_top/U_0_register/ip_ctrl_reg[20]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_control_reg[6]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.971ns (cell 0.316ns (32%), net 0.655ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_register/ip_ctrl_reg[20]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x088y118z5          0.181    f     0.181          pin: debug_hub_top/U_0_register/ip_ctrl_reg[20]_syn_2.oqb
+net (fo=1)                              0.655          0.836          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[0],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[6]_syn_2.imb
+reg                 x087y119z2          0.135    r     0.971          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[0],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.971               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[6]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.961               
+
+Slack               : 0.973ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[7]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[7]_syn_6.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.959ns (cell 0.310ns (32%), net 0.649ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[7]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x084y119z6          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[7]_syn_2.oqa
+net (fo=1)                              0.649          0.824          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[7],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[7]_syn_6.imb
+reg                 x084y117z6          0.135    r     0.959          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[7],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.959               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[7]_syn_6.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.973               
+
+Slack               : 1.018ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[43]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_control_reg[43]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.914ns (cell 0.310ns (33%), net 0.604ns (67%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[43]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x084y111z3          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[43]_syn_2.oqa
+net (fo=1)                              0.604          0.779          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[43],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[43]_syn_2.imb
+reg                 x084y112z0          0.135    r     0.914          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[43],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.914               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[43]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.018               
+
+Slack               : 1.027ns
+Begin Point         : debug_hub_top/U_0_register/ip_ctrl_reg[22]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_control_reg[23]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.905ns (cell 0.316ns (34%), net 0.589ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_register/ip_ctrl_reg[22]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x088y116z4          0.181    f     0.181          pin: debug_hub_top/U_0_register/ip_ctrl_reg[22]_syn_2.oqb
+net (fo=1)                              0.589          0.770          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[22],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[23]_syn_2.imb
+reg                 x087y116z4          0.135    r     0.905          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[22],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.905               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[23]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.027               
+
+Slack               : 1.041ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[33]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_control_reg[33]_syn_2.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.310ns (34%), net 0.581ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[33]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x087y114z6          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[33]_syn_2.oqa
+net (fo=1)                              0.581          0.756          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[33],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[33]_syn_2.imb
+reg                 x087y114z3          0.135    r     0.891          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[33],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_control_reg[33]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.041               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 2
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 2
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      0.819ns, STNS      0.000ns,         0 Viol Endpoints,        24 Total Endpoints,        24 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.819ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[11]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[9]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 1.113ns (cell 0.316ns (28%), net 0.797ns (72%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[11]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x082y107z5          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[11]_syn_2.oqb
+net (fo=1)                              0.797          0.978          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[9],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[9]_syn_2.ima
+reg                 x082y107z2          0.135    r     1.113          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[9],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.113               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[9]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.819               
+
+Slack               : 0.904ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[1]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[4]_syn_2.imb (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 1.028ns (cell 0.316ns (30%), net 0.712ns (70%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[1]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x084y107z0          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[1]_syn_2.oqb
+net (fo=1)                              0.712          0.893          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[2],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[4]_syn_2.imb
+reg                 x084y109z4          0.135    r     1.028          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[2],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.028               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[4]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.904               
+
+Slack               : 0.968ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[19]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[21]_syn_2.imb (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.964ns (cell 0.316ns (32%), net 0.648ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[19]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y112z7          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[19]_syn_2.oqb
+net (fo=1)                              0.648          0.829          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[23],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[21]_syn_2.imb
+reg                 x082y112z4          0.135    r     0.964          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[23],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.964               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[21]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.968               
+
+Slack               : 0.970ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[15]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[16]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.962ns (cell 0.316ns (32%), net 0.646ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[15]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y110z5          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[15]_syn_2.oqb
+net (fo=1)                              0.646          0.827          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[16],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[16]_syn_2.ima
+reg                 x081y110z1          0.135    r     0.962          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[16],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.962               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[16]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.970               
+
+Slack               : 0.973ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[18]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[21]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.959ns (cell 0.316ns (32%), net 0.643ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[18]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y112z5          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[18]_syn_2.oqb
+net (fo=1)                              0.643          0.824          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[21],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[21]_syn_2.ima
+reg                 x082y112z4          0.135    r     0.959          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[21],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.959               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[21]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.973               
+
+Slack               : 0.992ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[5]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[5]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.940ns (cell 0.310ns (32%), net 0.630ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[5]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x082y107z7          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[5]_syn_2.oqa
+net (fo=1)                              0.630          0.805          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[5],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[5]_syn_2.ima
+reg                 x082y107z3          0.135    r     0.940          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[5],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.940               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[5]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.992               
+
+Slack               : 1.069ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[19]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_2.imb (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.863ns (cell 0.310ns (35%), net 0.553ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[19]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y112z7          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[19]_syn_2.oqa
+net (fo=1)                              0.553          0.728          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[19],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_2.imb
+reg                 x082y112z6          0.135    r     0.863          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[19],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.863               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.069               
+
+Slack               : 1.158ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[15]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[15]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.774ns (cell 0.310ns (40%), net 0.464ns (60%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[15]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y110z5          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[15]_syn_2.oqa
+net (fo=1)                              0.464          0.639          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[15],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[15]_syn_2.ima
+reg                 x081y110z0          0.135    r     0.774          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[15],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.774               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[15]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.158               
+
+Slack               : 1.164ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[8]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[7]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.768ns (cell 0.316ns (41%), net 0.452ns (59%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[8]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y107z4          0.181    f     0.181          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[8]_syn_2.oqb
+net (fo=1)                              0.452          0.633          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[7],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[7]_syn_2.ima
+reg                 x081y109z6          0.135    r     0.768          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[7],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.768               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[7]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.164               
+
+Slack               : 1.225ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[18]_syn_2.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[18]_syn_2.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.707ns (cell 0.310ns (43%), net 0.397ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[18]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x081y112z5          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[18]_syn_2.oqa
+net (fo=1)                              0.397          0.572          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[18],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[18]_syn_2.ima
+reg                 x082y112z7          0.135    r     0.707          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[18],  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.707               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[18]_syn_2.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.225               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 2
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 2
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.019ns, STNS      0.000ns,         0 Viol Endpoints,         2 Total Endpoints,         2 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.019ns
+Begin Point         : debug_hub_top/U_0_register/ctrl_shift_reg[23]_syn_2.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk_reg_syn_3.ima (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.913ns (cell 0.316ns (34%), net 0.597ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_register/ctrl_shift_reg[23]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x083y116z1          0.181    f     0.181          pin: debug_hub_top/U_0_register/ctrl_shift_reg[23]_syn_2.oqb
+net (fo=2)                              0.597          0.778          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_aclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk_reg_syn_3.ima
+reg                 x084y116z2          0.135    r     0.913          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.913               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk_reg_syn_3.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.019               
+
+Slack               : 1.208ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk_reg_syn_6.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_vld_bclk_reg_syn_3.imb (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.724ns (cell 0.310ns (42%), net 0.414ns (58%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk_reg_syn_6.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x091y118z0          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk_reg_syn_6.oqa
+net (fo=2)                              0.414          0.589          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_vld_bclk_reg_syn_3.imb
+reg                 x091y118z7          0.135    r     0.724          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_sync1_bclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.724               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_vld_bclk_reg_syn_3.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.208               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 2
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 2
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.330ns, STNS      0.000ns,         0 Viol Endpoints,         2 Total Endpoints,         2 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.330ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_bclk_reg_syn_5.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_sync1_aclk_reg_syn_3.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.602ns (cell 0.310ns (51%), net 0.292ns (49%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_bclk_reg_syn_5.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x084y115z2          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_bclk_reg_syn_5.oqa
+net (fo=2)                              0.292          0.467          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_bclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_sync1_aclk_reg_syn_3.ima
+reg                 x082y115z2          0.135    r     0.602          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_sync1_aclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.602               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_sync1_aclk_reg_syn_3.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.330               
+
+Slack               : 1.340ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_5.clk (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_3.ima (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 2.000ns { config_inst.cwc_tck_o rising@0.000ns - u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns }
+Data Path Delay     : 0.592ns (cell 0.310ns (52%), net 0.282ns (48%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_5.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x091y118z5          0.175    r     0.175          pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_5.oqa
+net (fo=2)                              0.282          0.457          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_3.ima
+reg                 x091y118z1          0.135    r     0.592          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.592               
+
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_3.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.068          1.932               
+clock uncertainty                       0.000          1.932               
+clock pessimism                         0.000          1.932               
+--------------------------------------------------------------------  ---------------
+Required                                               1.932               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.340               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 2
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 2
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.243ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.243ns
+Begin Point         : debug_hub_top/U_tap/rst_reg_syn_3.clk (rising edge triggered by clock config_inst.cwc_tck_o  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_rst_sync1_reg_syn_3.asr (rising edge triggered by clock u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  { rise@0.000000ns  fall@5.000000ns  period=10.000000 })
+Check Type          : recovery
+Process             : slow
+Budget              : 2.000ns { u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0] rising@0.000ns - config_inst.cwc_tck_o rising@0.000ns }
+Data Path Delay     : 0.821ns (cell 0.175ns (21%), net 0.646ns (79%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 154
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.140ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x093y119            0.000          0.000          pin: config_inst.tck_i
+hierarchy                               0.000          0.000          pin: config_inst.cwc_tck_o
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst.clkin[0]
+GCLK                x079y059z19         0.000          0.000          pin: cwc_jtck_created_gclkinst.clkout
+net (fo=1)                              0.000          0.000          net: cwc_jtck_syn_1,  NOFILE(0)
+                                                                      pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkin
+SCLK                x079y099z14         0.000          0.000          pin: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3.clkout
+net (fo=154)                            0.000          0.000          net: cwc_jtck_created_gclkinst_auto_created_sclk_s_2_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_tap/rst_reg_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x092y119z1          0.175    r     0.175          pin: debug_hub_top/U_tap/rst_reg_syn_3.oqa
+net (fo=154)                            0.646          0.821          net: debug_hub_top/U_0_register/rst,  E:/anlu/TD/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync1_reg_syn_3.asr
+reg                 x092y118z6          0.000    f     0.821               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.821               
+
+source latency                          0.000          0.000               
+port                H16                 0.000          0.000          pin: clk_in
+hierarchy                               0.000          0.000          pin: clk_in_syn_2.ipad
+PAD                 x123y097            0.000          0.000          pin: clk_in_syn_2.di
+net (fo=1)          x123y119            0.000          0.000          net: clk_in_dup_1,  ../../uisrc/01_rtl/DCDC_top.v(37)
+                                                                      pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.refclk
+PLL                 x123y119            0.000          0.000          pin: u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_pll_sys100/clk0_buf,  ../../uisrc/03_ip/PLL_sys100/PLL_sys100.v(29)
+                                                                      pin: u_pll_sys100/bufg_feedback.clkin[0]
+GCLK                x079y059z16         0.000          0.000          pin: u_pll_sys100/bufg_feedback.clkout
+net (fo=6)                              0.000          0.000          net: clk_100m,  ../../uisrc/01_rtl/DCDC_top.v(80)
+                                                                      pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkin
+SCLK                x079y099z13         0.000          0.000          pin: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2.clkout
+net (fo=2492)                           0.000          0.000          net: u_pll_sys100/bufg_feedback_auto_created_sclk_s_2_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync1_reg_syn_3.clk
+constraint delay                        2.000          2.000               
+--------------------------------------------------------------------  ---------------
+recovery                                0.064          2.064               
+clock uncertainty                       0.000          2.064               
+clock pessimism                         0.000          2.064               
+--------------------------------------------------------------------  ---------------
+Required                                               2.064               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.243               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+
+

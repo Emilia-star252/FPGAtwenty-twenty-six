@@ -1,0 +1,41 @@
+{
+	"input_params" : {
+		"r_mean" : 0.0,
+		"g_mean" : 0.0,
+		"b_mean" : 0.0,
+		"r_scale" : 0.0039210,
+		"g_scale" : 0.0039210,
+		"b_scale" : 0.0039210
+	},
+	"yolo_params" : {
+		"probThreshold": 0.35,
+		"nmsThreshold": 0.45,
+		"className": [
+			"face"
+		],
+		"strideAnchorMap": [
+			{
+				"key": 16,
+				"val": [
+					4,
+					6,
+					8,
+					10,
+					13,
+					17
+				]
+			},
+			{
+				"key": 32,
+				"val": [
+					26,
+					35,
+					60,
+					78,
+					162,
+					206
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+GUI-5005 WARNING: Unknown file icon ...
+HDL-8007 ERROR: 'axi_reset_sync' is not declared in uisrc/01_rtl/DCDC_top.v(284)
+HDL-8007 ERROR: ignore module module due to previous errors in uisrc/01_rtl/DCDC_top.v(3)
+GUI-5005 WARNING: Unknown file icon ...
+PRJ-5303 WARNING: Run phy_1 failed.
+GUI-8405 ERROR: ad_busy is not the signal of the project.
+GUI-8405 ERROR: ad_convsta is not the signal of the project.
+GUI-8405 ERROR: ad_convstb is not the signal of the project.
+GUI-8405 ERROR: ad_cs is not the signal of the project.
+GUI-8405 ERROR: ad_dout_a is not the signal of the project.
+GUI-8405 ERROR: ad_dout_b is not the signal of the project.
+GUI-8405 ERROR: ad_range is not the signal of the project.
+GUI-8405 ERROR: ad_rst is not the signal of the project.
+GUI-8405 ERROR: ad_sclk is not the signal of the project.
+GUI-8405 ERROR: card_power_en is not the signal of the project.
+GUI-8405 ERROR: clk_in is not the signal of the project.
+GUI-8405 ERROR: pwm1_h is not the signal of the project.
+GUI-8405 ERROR: pwm1_l is not the signal of the project.
+GUI-8405 ERROR: pwm2_h is not the signal of the project.
+GUI-8405 ERROR: pwm2_l is not the signal of the project.
+GUI-8405 ERROR: rst_n is not the signal of the project.
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)

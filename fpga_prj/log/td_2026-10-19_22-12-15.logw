@@ -1,0 +1,33 @@
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-6001 WARNING: File uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml does not exist!
+GUI-6001 WARNING: File uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml does not exist!
+GUI-8003 ERROR: uisrc/03_ip/axi_system/ip/axi_system_ddr_mailbox_0/axi_system_ddr_mailbox_0.v is missing!
+GUI-8003 ERROR: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/RTL/axi_protocol_converter_merge_axi_system_HP1_Duplex_Converter_0.v is missing!
+GUI-8003 ERROR: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.v is missing!
+GUI-8003 ERROR: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/RTL/axi_matrix_wrapper_axi_system_HP1_Duplex_Matrix_0.v is missing!
+GUI-8003 ERROR: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.v is missing!
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Converter_0/axi_system_HP1_Duplex_Converter_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.
+GUI-8002 ERROR: Failed to open file: uisrc/03_ip/axi_system/ip/axi_system_HP1_Duplex_Matrix_0/axi_system_HP1_Duplex_Matrix_0.xml. 系统找不到指定的路径。.

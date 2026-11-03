@@ -1,0 +1,8 @@
+E:/FPGA_project/uisrc/02_sim/PLL.v {1 {vlog -work work -vopt -stats=none {E:\FPGA_project\uisrc\02_sim\PLL.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module PLL
+
+Top level modules:
+	PLL
+
+} {} {}}

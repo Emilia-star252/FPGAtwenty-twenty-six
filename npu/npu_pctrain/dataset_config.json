@@ -1,0 +1,34 @@
+{
+  "schema": "DCDC_DATASET_CONFIG_V1",
+  "window_samples": 256,
+  "stride_samples": 128,
+  "sample_rate_hz": 25000,
+  "rules": {
+    "mean_bin_samples": 250,
+    "baseline_start_s": 0.25,
+    "baseline_end_s": 1.25,
+    "final_baseline_duration_s": 1.0,
+    "voltage_deviation_fraction": 0.02,
+    "bridge_gap_s": 0.10,
+    "transient_inner_guard_s": 0.02,
+    "pre_event_guard_s": 0.20,
+    "capture_edge_guard_s": 0.10,
+    "final_settling_guard_s": 0.25,
+    "final_voltage_tolerance_fraction": 0.01,
+    "final_current_tolerance_fraction": 0.02,
+    "final_current_tolerance_floor_a": 0.01,
+    "final_duty_tolerance_fraction": 0.002,
+    "final_duty_tolerance_floor": 0.0005
+  },
+  "runs": [
+    {"run_id": "normal_12v243ma", "experiment": "steady", "split": "train"},
+    {"run_id": "normal_24.02v308ma", "experiment": "steady", "split": "train"},
+    {"run_id": "normal_36.136v464ma", "experiment": "steady", "split": "train"},
+    {"run_id": "normal_48.244v619ma", "experiment": "steady", "split": "train"},
+    {"run_id": "normal_24.014v0.307_1.018a", "experiment": "load_step", "split": "train"},
+    {"run_id": "normal_24.01v1.194a", "experiment": "steady", "split": "validation"},
+    {"run_id": "normal_36.139v399_984ma", "experiment": "load_step", "split": "validation"},
+    {"run_id": "normal_48.25v957.7ma", "experiment": "steady", "split": "test"},
+    {"run_id": "normal_48.247v0.512_1.169a", "experiment": "load_step", "split": "test"}
+  ]
+}

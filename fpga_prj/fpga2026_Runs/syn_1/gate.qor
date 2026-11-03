@@ -1,0 +1,114 @@
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |        -1320                |
+|     Setup TNS             |       -20280                |
+|     Num of violated S-EP  |           31                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |        27099                |
+|     #luts                 |        32362                |
+|     #lut1                 |          110                |
+|     #lut1(~A)             |          110                |
+|     #slices               |         7625                |
+|     slices percentage     |       14.53%                |
+|     #RAMs                 |          103                |
+|     #DSPs                 |           68                |
+|     #f7mux                |        1.89%                |
+|     #MACROs               |          656                |
+|     #insts in MACRO       |         8083                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |          355                |
+|     #keep_hier            |          239                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 1% datanet fanout#    |        57.13                |
+| dff(single fanout)->dff   |         1654                |
+| dff(single fanout)->dram  |          129                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     u_pll_sy...           |           31                |
+|     Total Number          |           31                |
+|     Total Level Slack     |          -32                |
+|     Worst Level Slack     |           -2                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Over-quota Path Details
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         Clock                         |  Index  |  Budget(Period)  |  Level(Quota)  |                                   Cell Type List                                    |  Reason  |  Slack  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]  |    1    |   9849(10000)    |     14(13)     |  SEQ,ADDER,ADDER,ADDER,ADDER,LUT5,LUT5,LUT5,LUT5,LUT5,LUT6,LUT3,LUT3,LUT5,LUT6,SEQ  |  normal  |   16    
+                                                       |    2    |   9849(10000)    |     13(13)     |    SEQ,ADDER,ADDER,ADDER,ADDER,LUT5,LUT5,LUT5,LUT5,LUT5,LUT6,LUT3,LUT3,LUT6,SEQ     |  normal  |   704   
+                                                       |    3    |   9849(10000)    |     13(13)     |    SEQ,ADDER,ADDER,ADDER,ADDER,LUT5,LUT5,LUT5,LUT5,LUT5,LUT6,LUT3,LUT3,LUT6,SEQ     |  normal  |   704   
+                                                       |    4    |   9849(10000)    |     13(13)     |    SEQ,ADDER,ADDER,ADDER,ADDER,LUT5,LUT5,LUT5,LUT5,LUT5,LUT6,LUT3,LUT3,LUT6,SEQ     |  normal  |   704   
+                                                       |    5    |   9849(10000)    |     13(13)     |    SEQ,ADDER,ADDER,ADDER,ADDER,LUT5,LUT5,LUT5,LUT5,LUT5,LUT6,LUT3,LUT3,LUT6,SEQ     |  normal  |   704   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: Table only show top 5 paths for each clock group in default
+
+Logic Level Distribution
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock                                                                                                                            |  Period             |  0      |  1      |  2     |  3     |  4     |  5     |  6     |  7    |  8    |  9  |  10   |  13  |  14
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  adc_io_budget                                                                                                                    |  10.000ns (100MHz)  |  0      |  5      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  clk_in                                                                                                                           |  10.000ns (100MHz)  |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.GEN_PL_GP0S          |  10.000ns (100MHz)  |  65     |  0      |  0     |  1     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.GEN_PL_GP1S          |  10.000ns (100MHz)  |  3      |  62     |  0     |  1     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.GEN_PL_HP0           |  8.333ns (120MHz)   |  41     |  1      |  0     |  0     |  0     |  1     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.GEN_PL_HP1           |  10.000ns (100MHz)  |  46     |  39     |  74    |  2     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.master_gp0_axi_aclk  |  10.000ns (100MHz)  |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.master_gp1_axi_aclk  |  10.000ns (100MHz)  |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.p2f_clk0             |  20.000ns (50MHz)   |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.slave_hp0_axi_aclk   |  8.333ns (120MHz)   |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_ARM_Processor_System_0_Inst/ARM_Processor_System_Inst/DR1_PHY_PROCESSOR_SYSTEM_Inst.slave_hp1_axi_aclk   |  10.000ns (100MHz)  |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_HDMI_PLL_0_Inst/dr1_phy_pll_3a04da50d99b_Inst/u_DR1_PHY_PLL.clkc[0]                                      |  10.000ns (100MHz)  |  0      |  0      |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_HDMI_PLL_0_Inst/dr1_phy_pll_3a04da50d99b_Inst/u_DR1_PHY_PLL.clkc[1]                                      |  8.333ns (120MHz)   |  1727   |  520    |  359   |  252   |  223   |  88    |  208   |  15   |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_HDMI_PLL_0_Inst/dr1_phy_pll_3a04da50d99b_Inst/u_DR1_PHY_PLL.clkc[2]                                      |  6.666ns (150MHz)   |  615    |  478    |  94    |  75    |  66    |  11    |  13    |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_HDMI_PLL_1_Inst/dr1_phy_pll_2d86d31852c0_Inst/u_DR1_PHY_PLL.clkc[0]                                      |  4.081ns (245MHz)   |  55     |  37     |  0     |  0     |  0     |  0     |  0     |  0    |  0    |  0  |  0    |  0   |  0
+  u_axi_system/axi_system_HDMI_VTG_0_Inst/video_timing_generator_v01_dd045705834d_Inst/dr1_pll_vtc_Inst/u_DR1_PHY_PLL.clkc[0]      |  20.408ns (49MHz)   |  298    |  211    |  55    |  66    |  76    |  18    |  6     |  3    |  4    |  1  |  0    |  0   |  0
+  u_pll_sys100/dr1_phy_pll_Inst/u_DR1_PHY_PLL.clkc[0]                                                                              |  10.000ns (100MHz)  |  32977  |  11874  |  6115  |  5544  |  5448  |  3904  |  2867  |  856  |  236  |  1  |  118  |  30  |  1
+  Total                                                                                                                            |  NA                 |  35827  |  13227  |  6697  |  5941  |  5813  |  4022  |  3094  |  874  |  240  |  2  |  118  |  30  |  1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hierarchical Rent Exponent Report
++----------------------------------------------------------------------------+
+|Inst           |Model                |Rent     |Cell     |Pin     |Term     |
++----------------------------------------------------------------------------+
+|top            |DCDC_top             |0.12     |68624    |362304  |21       |
+|  u_rs485      |rs485_dcdc_control_7 |0.43     |2376     |11651   |137      |
+|  u_axi_system |axi_system_2         |0.32     |62167    |325794  |177      |
++----------------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+QoR Evaluation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ID        |  Priority  |  Description                                                     |  Suggestion
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  QOR-1002  |  HIGH      |  - 31 over-quota path exist.                                     |  - Try following setting to reduce over-quota:
+            |            |                                                                  |      set_param gate map_mode logic_level_prior
+            |            |                                                                  |      set_param gate map_strategy 2
+            |            |                                                                  |      set_param place logic_level_opt on
+            |            |                                                                  |  
+  QOR-3100  |  HIGH      |  - Long carry chain on over quota path, which may introduce lar  |  - Try to use directive "use_ripple = 0" to break the carry cha
+            |            |    ge data path delay.                                           |    in.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note* (*) means this parameter has been set already.
+      (+) means this parameter has been set, suggest to upgrade higher effort level.
+Note** plesae resolve priority MUST FIX and HIGH issues firstly
+       because these have highly possible to block the timing convergence even stop the flow.
+Note*** some suggested settings are not suitable to use together
+        take care of using them separately if suggestion mentioned.

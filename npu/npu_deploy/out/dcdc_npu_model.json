@@ -1,0 +1,40 @@
+{
+  "name": "dcdc_npu",
+  "input": {
+    "order": [
+      "v_out_V",
+      "i_out_A",
+      "duty_pct"
+    ],
+    "shape": [
+      1,
+      3
+    ],
+    "divisors": [
+      48.0,
+      2.2,
+      95.0
+    ],
+    "note": "板上喂 u = [Vout/48, Iout/2.2, duty/95]，均在 0..1"
+  },
+  "output": {
+    "classes": [
+      "正常-轻载",
+      "正常-额定",
+      "重载-近限流",
+      "保护故障"
+    ],
+    "shape": [
+      1,
+      4
+    ],
+    "activation": "softmax"
+  },
+  "hidden": [
+    32,
+    16
+  ],
+  "weights_header": "dcdc_npu_weights.h",
+  "onnx": "dcdc_npu.onnx",
+  "note": "标准化 + 除数已折进 fc1；板上先做 u=raw/div 再喂模型"
+}

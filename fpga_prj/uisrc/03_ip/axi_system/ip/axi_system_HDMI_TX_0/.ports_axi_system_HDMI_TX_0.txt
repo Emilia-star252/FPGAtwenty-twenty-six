@@ -1,0 +1,9 @@
+I_pixel_clk; 1
+I_serial_clk; 1
+I_rst; 1
+I_video_in_data; 1
+I_video_in_de; 1
+I_video_in_vs; 1
+I_video_in_hs; 1
+O_hdmi_clk_p; 1
+O_hdmi_tx_p; 1

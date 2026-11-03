@@ -1,0 +1,5 @@
+HDL-8007 ERROR: syntax error near ';' in uisrc/01_rtl/DCDC_top.v(15)
+HDL-8007 ERROR: syntax error near ';' in uisrc/01_rtl/DCDC_top.v(16)
+HDL-8007 ERROR: syntax error near ';' in uisrc/01_rtl/DCDC_top.v(15)
+HDL-8007 ERROR: cannot find port 'voltage_raw_in' on this module in uisrc/03_ip/axi_system/ip/axi_system_adc_axis_source_0/axi_system_adc_axis_source_0.v(45)
+HDL-8007 ERROR: cannot find port 'current_raw_in' on this module in uisrc/03_ip/axi_system/ip/axi_system_adc_axis_source_0/axi_system_adc_axis_source_0.v(46)

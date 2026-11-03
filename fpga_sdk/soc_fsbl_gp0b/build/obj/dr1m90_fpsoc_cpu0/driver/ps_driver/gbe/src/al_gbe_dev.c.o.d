@@ -1,0 +1,26 @@
+D:/FPGA/soc_sdk/soc_fsbl_gp0b/build/obj/dr1m90_fpsoc_cpu0/driver/ps_driver/gbe/src/al_gbe_dev.c.o: \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/driver/ps_driver/gbe/src/al_gbe_dev.c \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/driver/ps_driver/gbe/inc/al_gbe_dev.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/driver/ps_driver/gbe/inc/al_gbe_ll.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/driver/ps_driver/gbe/inc/al_gbe_hw.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_core.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_version.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_type.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_errno.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_utils_def.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_systimer.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_compiler.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/lib/log/inc/al_printf.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_type.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_reg_io.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_core.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_backtrace.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_barrier.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_cache.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_intr.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/chip/dr1x90/dr1m90/inc/al_chip.h \
+ d:\fpga\soc_sdk\soc_base_gp0b\dr1m90_fpsoc_cpu0\chip\dr1x90\common\inc\al_hwcfg.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/platform/inc/soc_plat.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_osal.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/inc/al_reg_io.h \
+ D:/FPGA/soc_sdk/soc_base_gp0b/dr1m90_fpsoc_cpu0/driver/ps_driver/gbe/inc/al_gbe_phy.h

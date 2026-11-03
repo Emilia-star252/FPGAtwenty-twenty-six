@@ -1,0 +1,33 @@
+set_pin_assignment	{ ad_busy }	{ LOCATION = R16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ ad_convsta }	{ LOCATION = N17; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ ad_convstb }	{ LOCATION = P18; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ ad_cs }	{ LOCATION = R18; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ ad_dout_a }	{ LOCATION = T16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ ad_dout_b }	{ LOCATION = U17; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ ad_range }	{ LOCATION = P20; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ ad_rst }	{ LOCATION = T17; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ ad_sclk }	{ LOCATION = P19; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ card_power_en }	{ LOCATION = U12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ clk_in }	{ LOCATION = H16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ pwm1_h }	{ LOCATION = Y12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ pwm1_l }	{ LOCATION = Y13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ pwm2_h }	{ LOCATION = T9; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ pwm2_l }	{ LOCATION = U10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ rst_n }	{ LOCATION = K14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+
+
+
+
+
+
+
+# HDMI TX, official MLK-F3P DR1 Qt reference pin assignments.
+set_pin_assignment { O_rs485_tx } { LOCATION = L17; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { I_rs485_rx } { LOCATION = N16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { O_rs485_de } { LOCATION = N15; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+set_pin_assignment { O_hdmi_clk_p } { LOCATION = K17; IOSTANDARD = LVDS33_E; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { O_hdmi_tx_p[0] } { LOCATION = M14; IOSTANDARD = LVDS33_E; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { O_hdmi_tx_p[1] } { LOCATION = F16; IOSTANDARD = LVDS33_E; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { O_hdmi_tx_p[2] } { LOCATION = D19; IOSTANDARD = LVDS33_E; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

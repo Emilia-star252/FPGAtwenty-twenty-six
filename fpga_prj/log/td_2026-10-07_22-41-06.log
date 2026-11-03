@@ -1,0 +1,136 @@
+GUI-5005 WARNING: Unknown file icon ...
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/RTL/ChipWatcher_ChipWatcher_0.sv
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/ChipWatcher_0.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/RTL/dr1_phy_pll_PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/AD7606/uispi7606.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PI.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PWM.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/DCDC_top.v
+HDL-1007 : undeclared symbol 'axi_clk', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(283)
+HDL-1007 : undeclared symbol 'axi_awaddr', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(292)
+HDL-1007 : undeclared symbol 'axi_awprot', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(293)
+HDL-1007 : undeclared symbol 'axi_awvalid', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(294)
+HDL-1007 : undeclared symbol 'axi_awready', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(295)
+HDL-1007 : undeclared symbol 'axi_wdata', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(296)
+HDL-1007 : undeclared symbol 'axi_wstrb', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(297)
+HDL-1007 : undeclared symbol 'axi_wvalid', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(298)
+HDL-1007 : undeclared symbol 'axi_wready', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(299)
+HDL-1007 : undeclared symbol 'axi_bresp', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(300)
+HDL-1007 : undeclared symbol 'axi_bvalid', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(301)
+HDL-1007 : undeclared symbol 'axi_bready', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(302)
+HDL-1007 : undeclared symbol 'axi_araddr', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(303)
+HDL-1007 : undeclared symbol 'axi_arprot', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(304)
+HDL-1007 : undeclared symbol 'axi_arvalid', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(305)
+HDL-1007 : undeclared symbol 'axi_arready', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(306)
+HDL-1007 : undeclared symbol 'axi_rdata', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(307)
+HDL-1007 : undeclared symbol 'axi_rresp', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(308)
+HDL-1007 : undeclared symbol 'axi_rvalid', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(309)
+HDL-1007 : undeclared symbol 'axi_rready', assumed default net type 'wire' in uisrc/01_rtl/DCDC_top.v(310)
+HDL-8007 ERROR: 'axi_reset_sync' is not declared in uisrc/01_rtl/DCDC_top.v(284)
+HDL-8007 ERROR: ignore module module due to previous errors in uisrc/01_rtl/DCDC_top.v(3)
+HDL-1007 : Verilog file 'uisrc/01_rtl/DCDC_top.v' ignored due to errors
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/RTL/ChipWatcher_ChipWatcher_0.sv
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/ChipWatcher_0.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/RTL/dr1_phy_pll_PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/AD7606/uispi7606.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PI.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PWM.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/DCDC_top.v
+PRJ-1409 : launch_runs syn_1 phy_1  -jobs 6.
+GUI-5005 WARNING: Unknown file icon ...
+PRJ-5303 WARNING: Run phy_1 failed.
+RUN-1002 : start command "save_best_bits"
+RUN-1002 : start command "import_db E:/FPGA_2026/fpga2026_Runs/phy_1/fpga2026_pr.db"
+RUN-1001 : Database version number 46207
+RUN-1001 : Importing database generated by Tang Dynasty, V6.2.2.200067.
+RUN-1001 : Import flow parameters
+RUN-1001 : Import netlist
+RUN-1001 : Constructing routing connections ...
+PHY-1001 : End build routing graph; 3.878633s wall, 9.890625s user + 0.406250s system = 10.296875s CPU (265.5%)
+
+RUN-1001 : Import phy database
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import ChipWatcher
+RUN-1001 : Import design success TD_VERSION=Release_2026.1_SP2 , DB_VERSION=46207
+RUN-1003 : finish command "import_db E:/FPGA_2026/fpga2026_Runs/phy_1/fpga2026_pr.db" in  4.074135s wall, 10.062500s user + 0.468750s system = 10.531250s CPU (258.5%)
+
+RUN-1004 : used memory is 890 MB, reserved memory is 1228 MB, peak memory is 890 MB
+GUI-8405 ERROR: ad_busy is not the signal of the project.
+GUI-8405 ERROR: ad_convsta is not the signal of the project.
+GUI-8405 ERROR: ad_convstb is not the signal of the project.
+GUI-8405 ERROR: ad_cs is not the signal of the project.
+GUI-8405 ERROR: ad_dout_a is not the signal of the project.
+GUI-8405 ERROR: ad_dout_b is not the signal of the project.
+GUI-8405 ERROR: ad_range is not the signal of the project.
+GUI-8405 ERROR: ad_rst is not the signal of the project.
+GUI-8405 ERROR: ad_sclk is not the signal of the project.
+GUI-8405 ERROR: card_power_en is not the signal of the project.
+GUI-8405 Similar messages will be suppressed.
+PRJ-1412 : reset_run syn_1 phy_1.
+PRJ-1409 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1002 : start command "save_best_bits"
+PRJ-1424 : The implemented result of phy_1 is saved as best result.
+RUN-1002 : start command "import_db E:/FPGA_2026/fpga2026_Runs/phy_1/fpga2026_pr.db"
+RUN-1001 : Database version number 46207
+RUN-1001 : Importing database generated by Tang Dynasty, V6.2.2.200067.
+RUN-1001 : Import flow parameters
+RUN-1001 : Import netlist
+RUN-1001 : Constructing routing connections ...
+PHY-1001 : End build routing graph; 1.958022s wall, 8.203125s user + 0.140625s system = 8.343750s CPU (426.1%)
+
+RUN-1001 : Import phy database
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import ChipWatcher
+RUN-1001 : Import design success TD_VERSION=Release_2026.1_SP2 , DB_VERSION=46207
+RUN-1003 : finish command "import_db E:/FPGA_2026/fpga2026_Runs/phy_1/fpga2026_pr.db" in  2.372641s wall, 8.531250s user + 0.296875s system = 8.828125s CPU (372.1%)
+
+RUN-1004 : used memory is 901 MB, reserved memory is 1245 MB, peak memory is 977 MB
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+RUN-1002 : start command "update_timing -mode final -ctr"
+RUN-1002 : start command "start_timer"
+TMR-2502 : Net delay update with mode: Routed

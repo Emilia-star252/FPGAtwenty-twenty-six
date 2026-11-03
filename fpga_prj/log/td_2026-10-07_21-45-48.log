@@ -1,0 +1,122 @@
+ARC-1001 : Device Initialization.
+ARC-1001 : --------------------------------------------------------
+ARC-1001 :           OPTION          |      IO       |   SETTING   
+ARC-1001 : --------------------------------------------------------
+ARC-1001 :   non_jtag_persist(none)  |    35 IOs     |    gpio    
+ARC-1001 :            jtag           |  F9/J6/G6/F6  |  dedicate  
+ARC-1001 : --------------------------------------------------------
+RUN-1003 : finish command "import_device dr1_90.db -package DR1M90GEG400 -speed 2" in  2.853693s wall, 2.437500s user + 0.234375s system = 2.671875s CPU (93.6%)
+
+RUN-1004 : used memory is 551 MB, reserved memory is 486 MB, peak memory is 585 MB
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-5007 WARNING: could not find top-level module/unit; aborting hierarchy tree creation
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file uisrc/03_ip/AD7606/uispi7606.v
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/RTL/ChipWatcher_ChipWatcher_0.sv
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/ChipWatcher_0.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/RTL/dr1_phy_pll_PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/AD7606/uispi7606.v
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/RTL/ChipWatcher_ChipWatcher_0.sv
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/ChipWatcher_0.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/RTL/dr1_phy_pll_PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/AD7606/uispi7606.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PI.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PWM.v
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/RTL/ChipWatcher_ChipWatcher_0.sv
+HDL-1007 : analyze verilog file uisrc/03_ip/ChipWatcher_0/ChipWatcher_0.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/RTL/dr1_phy_pll_PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/PLL_sys100/PLL_sys100.v
+HDL-1007 : analyze verilog file uisrc/03_ip/AD7606/uispi7606.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PI.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/PWM.v
+HDL-1007 : analyze verilog file uisrc/01_rtl/DCDC_top.v

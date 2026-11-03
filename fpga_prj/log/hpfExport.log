@@ -1,0 +1,154 @@
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/ip/depot
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Info] preParePlData Pass
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0
+[Info] device: DR1M90GEG400
+[Info] cfgRoot: E:/anlu/TD/bin/../ip/depot/
+psPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0
+designPath: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system
+[Info] Export Ps File Pass: ARM_Processor_System_0
+[Error] addressFile parse Error: E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/axi_system.address.xml
+[Info] export Bm Driver Pass: ARM_Processor_System_0

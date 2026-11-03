@@ -1,0 +1,4 @@
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+PRG-9507 ERROR: line 65662133 read = 0x00   ref = 0x01
+GUI-8001 ERROR: Downloading failed!

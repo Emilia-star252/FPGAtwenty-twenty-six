@@ -1,0 +1,24 @@
+Location         : E:\FPGA_2026\fpga_prj\fpga2026_Runs\syn_1
+Running with     : Tang Dynasty Release_2026.1_SP2
+                   Copyright (c) 2012-2026 Anlogic Inc.
+Top Model        : DCDC_top
+Device           : DR1M90GEG400
+Speed            : 2
+
+Timing Mode      : basic
+Setup            : WNS -1320ps  TNS   -20280ps  NUM_FEPS    31
+Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |  2m21s(62%)  |   139(62%)    |       1552        |       2064        
+  optimize_rtl   |    1     |  1m24s(37%)  |    82(36%)    |       1883        |       2025        
+  import_device  |    1     |    2s(0%)    |     1(0%)     |        396        |        396        
+    import_db    |    1     |    0s(0%)    |     0(0%)     |       1318        |       1318        
+    read_adc     |    1     |    0s(0%)    |     0(0%)     |       1313        |       1313        
+    read_sdc     |    2     |    0s(0%)    |     0(0%)     |       1313        |       1313        
+---------------------------------------------------------------------------------------------------
+      total      |    7     |    3m47s     |      222      |       1883        |       2064        
+---------------------------------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+`define NUM_10_axi_system_HDMI_IRQ_Concat_0
+`define NUM_11_axi_system_HDMI_IRQ_Concat_0
+`define NUM_12_axi_system_HDMI_IRQ_Concat_0
+`define NUM_13_axi_system_HDMI_IRQ_Concat_0
+`define NUM_14_axi_system_HDMI_IRQ_Concat_0
+`define NUM_15_axi_system_HDMI_IRQ_Concat_0
+`define NUM_16_axi_system_HDMI_IRQ_Concat_0
+`define NUM_2_axi_system_HDMI_IRQ_Concat_0
+`define NUM_3_axi_system_HDMI_IRQ_Concat_0
+`define NUM_4_axi_system_HDMI_IRQ_Concat_0
+`define NUM_5_axi_system_HDMI_IRQ_Concat_0
+`define NUM_6_axi_system_HDMI_IRQ_Concat_0
+`define NUM_7_axi_system_HDMI_IRQ_Concat_0
+`define NUM_8_axi_system_HDMI_IRQ_Concat_0
+`define NUM_9_axi_system_HDMI_IRQ_Concat_0

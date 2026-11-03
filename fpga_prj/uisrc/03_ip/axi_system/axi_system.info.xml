@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ipxact:root xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:compositeFile compositeFileTopName="axi_system">
+        <ipxact:fileCollection>
+            <ipxact:file name="ip/axi_system_ARM_Processor_System_0/axi_system_ARM_Processor_System_0.xml">
+                <ipxact:instanceName>ARM_Processor_System_0</ipxact:instanceName>
+                <ipxact:customTool>use_ps</ipxact:customTool>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_AXI_Protocol_Converter_0/axi_system_AXI_Protocol_Converter_0.xml">
+                <ipxact:instanceName>AXI_Protocol_Converter_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_Processor_System_Reset_0/axi_system_Processor_System_Reset_0.xml">
+                <ipxact:instanceName>Processor_System_Reset_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_Constant_0/axi_system_Constant_0.xml">
+                <ipxact:instanceName>Constant_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_Constant_0_0/axi_system_Constant_0_0.xml">
+                <ipxact:instanceName>Constant_0_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_AXIS_Data_FIFO_0/axi_system_AXIS_Data_FIFO_0.xml">
+                <ipxact:instanceName>AXIS_Data_FIFO_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_adc_axis_source_0/axi_system_adc_axis_source_0.xml">
+                <ipxact:instanceName>adc_axis_source_0</ipxact:instanceName>
+                <ipxact:ipPath>E:/FPGA_2026/fpga_prj/uisrc/01_rtl/adc_axis_source.v</ipxact:ipPath>
+                <ipxact:customTool>use_rtl</ipxact:customTool>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_axi4lite_slave_0/axi_system_axi4lite_slave_0.xml">
+                <ipxact:instanceName>axi4lite_slave_0</ipxact:instanceName>
+                <ipxact:ipPath>E:/FPGA_2026/fpga_prj/uisrc/01_rtl/axi4lite_slave.v</ipxact:ipPath>
+                <ipxact:customTool>use_rtl</ipxact:customTool>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_AXI_Lite_Matrix_0/axi_system_AXI_Lite_Matrix_0.xml">
+                <ipxact:instanceName>AXI_Lite_Matrix_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_adc_fdma_writer_0/axi_system_adc_fdma_writer_0.xml">
+                <ipxact:instanceName>adc_fdma_writer_0</ipxact:instanceName>
+                <ipxact:ipPath>E:/FPGA_2026/fpga_prj/uisrc/01_rtl/adc_fdma_writer.v</ipxact:ipPath>
+                <ipxact:customTool>use_rtl</ipxact:customTool>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HP1_AXI_Matrix_0/axi_system_HP1_AXI_Matrix_0.xml">
+                <ipxact:instanceName>HP1_AXI_Matrix_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HP1_Protocol_Converter_0/axi_system_HP1_Protocol_Converter_0.xml">
+                <ipxact:instanceName>HP1_Protocol_Converter_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_PLL_0/axi_system_HDMI_PLL_0.xml">
+                <ipxact:instanceName>HDMI_PLL_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_PLL_1/axi_system_HDMI_PLL_1.xml">
+                <ipxact:instanceName>HDMI_PLL_1</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_VDMA_0/axi_system_VDMA_0.xml">
+                <ipxact:instanceName>VDMA_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_AXI4_Stream_to_Video_Out_0/axi_system_AXI4_Stream_to_Video_Out_0.xml">
+                <ipxact:instanceName>AXI4_Stream_to_Video_Out_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_VTG_0/axi_system_HDMI_VTG_0.xml">
+                <ipxact:instanceName>HDMI_VTG_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_TX_0/axi_system_HDMI_TX_0.xml">
+                <ipxact:instanceName>HDMI_TX_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_IRQ_Concat_0/axi_system_HDMI_IRQ_Concat_0.xml">
+                <ipxact:instanceName>HDMI_IRQ_Concat_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_HP0_Protocol_Converter_0/axi_system_HDMI_HP0_Protocol_Converter_0.xml">
+                <ipxact:instanceName>HDMI_HP0_Protocol_Converter_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_HDMI_Reset_0/axi_system_HDMI_Reset_0.xml">
+                <ipxact:instanceName>HDMI_Reset_0</ipxact:instanceName>
+                <ipxact:ipPath>E:/FPGA_2026/fpga_prj/uisrc/01_rtl/hdmi_clock_reset.v</ipxact:ipPath>
+                <ipxact:customTool>use_rtl</ipxact:customTool>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_NPU_Control_Matrix_0/axi_system_NPU_Control_Matrix_0.xml">
+                <ipxact:instanceName>NPU_Control_Matrix_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_NPU_Control_Converter_0/axi_system_NPU_Control_Converter_0.xml">
+                <ipxact:instanceName>NPU_Control_Converter_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_Video_NPU_0/axi_system_Video_NPU_0.xml">
+                <ipxact:instanceName>Video_NPU_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/axi_system_NPU_HP1_Adapter_0/axi_system_NPU_HP1_Adapter_0.xml">
+                <ipxact:instanceName>NPU_HP1_Adapter_0</ipxact:instanceName>
+                <ipxact:ipPath>E:/FPGA_2026/fpga_prj/uisrc/01_rtl/npu_hp1_axi_adapter.v</ipxact:ipPath>
+                <ipxact:customTool>use_rtl</ipxact:customTool>
+            </ipxact:file>
+        </ipxact:fileCollection>
+    </ipxact:compositeFile>
+</ipxact:root>

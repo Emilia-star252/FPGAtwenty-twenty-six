@@ -1,0 +1,30 @@
+#[INFO] hpfTool V2026.05 (APP rel6.2.2), Windows 64bit (Release), Build , 14:17:11 May 21 2026 on WIN10-204
+#[INFO] Run at Fri Oct 30 20:34:52 2026
+#E:\anlu\TD\bin\hpfTool.exe -prj_path E:/FPGA_2026/fpga_prj -prj_name fpga2026 -ps_path E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/ip/axi_system_ARM_Processor_System_0 -model_id com.anlogic.61602590 -design_path E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system -bitstream_path E:/FPGA_2026/fpga_prj/fpga2026_Runs/phy_1\fpga2026.bit -bitstream_status latest
+#[INFO] idePath: E:/anlu/TD/bin/td.exe
+#[INFO] E:/anlu/TD/bin/../ip/depot/
+#[INFO] Loading E:/FPGA_2026/fpga_prj/uisrc/03_ip/axi_system/Design.xml
+#[INFO] ipCfgRootPath: E:/anlu/TD/bin/../ip/depot//ARM_Processor_System_F9F0D0P0_1.0
+#[INFO] hpfcfgDir: E:/anlu/TD/bin/../ip/depot//ARM_Processor_System_F9F0D0P0_1.0/static
+si_select_dialog HpfToolDialog
+si_set_checkbox HpfToolDialog HpfToolDialog.IncludeBitstream checked
+si_select_combobox_item HpfToolDialog HpfToolDialog.ExportTo Choose_Location... 1
+si_select_file_dialog HpfExportPathFileDialog E:/FPGA_2026/fpga_hw
+si_select_dialog HpfToolDialog
+si_click_push_button HpfToolDialog HpfToolDialog.OK
+#[INFO] Loading E:/FPGA_2026/fpga_prj/fpga2026_Runs/phy_1\fpga2026.bit
+#[INFO] ipCfgPath:E:/anlu/TD/bin/../ip/depot//ARM_Processor_System_F9F0D0P0_1.0 outHpfPath:E:/FPGA_2026/fpga_prj
+#[INFO] plipAddressPath:
+#[INFO] param_val count:2201
+#[INFO] bitstream_path: E:/FPGA_2026/fpga_prj/fpga2026_Runs/phy_1\fpga2026.bit
+#[INFO] device:DR1M90GEG400 speed:-2
+#[INFO] Remove HPFs folder success!
+#[INFO] Start comment file: E:/FPGA_2026/fpga_hw/fpga2026_Temp.hpf -> E:/FPGA_2026/fpga_hw/fpga2026.hpf
+#[INFO] The original file bytes count is 1345749
+#[INFO] The specified byte of original file have been modified
+#[INFO] The original file CRC32 is 0x3a462ddf
+#[INFO] The output file have saved to E:/FPGA_2026/fpga_hw/fpga2026.hpf, bytes count is 1345813
+si_select_dialog StandardMessageBox #Info
+si_click_push_button StandardMessageBox Ok
+#[INFO] exit hpf tool
+si_select_dialog HpfToolDialog

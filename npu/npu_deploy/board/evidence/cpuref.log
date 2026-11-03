@@ -1,0 +1,15 @@
+[stage] parse onnx
+[stage] parser: 1 输入 / 1 输出
+[stage] create runtime
+[shim] /dev/soft_npu 用假设备代替（fd=5）
+[shim] soft_npu 寄存器区映射到匿名内存 0x7fb21cf000 (65536 B)
+[stage] optimize
+[stage] load network
+[stage] alloc input 128 B
+[stage] alloc output 64 B
+[stage] bind done
+[stage] ctor ok
+[stage] describe start
+[npu] 输入[0] input shape=1 8 4 4 type=2 bytes=128 scale=0.003922 zp=0
+[npu] 输出[0] logits shape=1 4 4 4 type=2 bytes=64 scale=0.259637 zp=0
+[npu] 输入通道=8 空间=16，输出空间=16

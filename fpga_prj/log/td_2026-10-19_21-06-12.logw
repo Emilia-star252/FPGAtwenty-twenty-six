@@ -1,0 +1,7 @@
+PRJ-5303 WARNING: Run syn_1 failed.
+PRJ-5303 WARNING: Run syn_1 failed.
+PRJ-8403 ERROR: File(E:/FPGA_2026/uisrc/01_rtl/ddr_mailbox_ctrl.v) is already in fileSet(design_1).
+GUI-5001 WARNING: Failed to add the file: E:/FPGA_2026/uisrc/01_rtl/ddr_mailbox_ctrl.v
+PRJ-8403 ERROR: File(E:/FPGA_2026/uisrc/01_rtl/mailbox_axil_master.v) is already in fileSet(design_1).
+GUI-5001 WARNING: Failed to add the file: E:/FPGA_2026/uisrc/01_rtl/mailbox_axil_master.v
+PRJ-5303 WARNING: Run syn_1 failed.

@@ -1,0 +1,6 @@
+irq_before=6
+[npu] 输出[0] logits shape=1 4 4 4 type=2 bytes=64 scale=0.259637 zp=0
+[npu] 输入通道=8 空间=16，输出空间=16
+irq_after=621 delta=615
+[npu] 输出[0] logits shape=1 4 4 4 type=2 bytes=64 scale=0.259637 zp=0
+[npu] 输入通道=8 空间=16，输出空间=16

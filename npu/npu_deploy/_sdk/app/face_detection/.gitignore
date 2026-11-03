@@ -1,0 +1,12 @@
+/build
+/rootfs
+__pycache__
+*.cmd
+*.ko
+*.o
+*.o.d
+*.mod
+*.mod.c
+*.symvers
+*.order
+compile_commands.json

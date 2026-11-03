@@ -1,0 +1,7 @@
+CHIP=dr1m90
+HPF_FILE=fpga2026.hpf
+MSS_FILE=system.mss
+OS=standalone
+PROCESSOR=apu-0
+PROJECT_LOCATION=D:/FPGA/soc_sdk/soc_base_gp0b
+PROJECT_NAME=soc_base_gp0b

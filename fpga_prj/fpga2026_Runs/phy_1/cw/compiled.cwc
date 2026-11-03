@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HMAC is: 7b933816f12df4c9828f0e84b7fa03194812c6553685c5076ac3d58be34bb3dc -->
+<chipwatcher version="3.040000" project_name="fpga2026" chip_name="DR1M90GEG400">
+	<watcher_nodes>
+		<bus name="voltage_raw[15:0]" clock="clk_100m" inst="u_chipwatcher" type="IP_PROBE" is_enabled="yes">
+			<net name="voltage_raw[15]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[14]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[13]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[12]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[11]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[10]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[9]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[8]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[7]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[6]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[5]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[4]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[3]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[2]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[1]" const="false" data="enable" trig="disable"/>
+			<net name="voltage_raw[0]" const="false" data="enable" trig="disable"/>
+		</bus>
+		<bus name="current_raw[15:0]" clock="clk_100m" inst="u_chipwatcher" type="IP_PROBE" is_enabled="yes">
+			<net name="current_raw[15]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[14]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[13]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[12]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[11]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[10]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[9]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[8]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[7]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[6]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[5]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[4]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[3]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[2]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[1]" const="false" data="enable" trig="disable"/>
+			<net name="current_raw[0]" const="false" data="enable" trig="disable"/>
+		</bus>
+		<net name="adc_valid" clock="clk_100m" inst="u_chipwatcher" type="IP_PROBE" is_enabled="yes" const="false" trig="enable" data="enable"/>
+		<net name="adc_error" clock="clk_100m" inst="u_chipwatcher" type="IP_PROBE" is_enabled="yes" const="false" trig="enable" data="enable"/>
+		<net name="adc_busy" clock="clk_100m" inst="u_chipwatcher" type="IP_PROBE" is_enabled="yes" const="false" trig="enable" data="enable"/>
+	</watcher_nodes>
+	<instance name="u_chipwatcher" id="0" ipgen="true" inst_enable="true">
+		<clock clk_name="clk_100m" clk_peroid="10ns"/>
+		<config bram_name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram" debughub_name="u_chipwatcher/ChipWatcher_Inst/wrapper_debughub" input_pipe_num="0" output_pipe_num="0" pwr_on_trigger="disable" capture_mode="enable" sample_depth="4096"/>
+		<signal_vec>
+			<watcher_nodes>
+				<bus name="voltage_raw[15:0]" op="dont_care" capture_op="dont_care">
+					<net name="voltage_raw[15]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[14]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[13]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[12]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[11]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[10]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[9]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[8]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[7]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[6]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[5]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[4]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[3]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[2]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[1]" cond="low" capture_cond="low"/>
+					<net name="voltage_raw[0]" cond="low" capture_cond="low"/>
+				</bus>
+				<bus name="current_raw[15:0]" op="dont_care" capture_op="dont_care">
+					<net name="current_raw[15]" cond="low" capture_cond="low"/>
+					<net name="current_raw[14]" cond="low" capture_cond="low"/>
+					<net name="current_raw[13]" cond="low" capture_cond="low"/>
+					<net name="current_raw[12]" cond="low" capture_cond="low"/>
+					<net name="current_raw[11]" cond="low" capture_cond="low"/>
+					<net name="current_raw[10]" cond="low" capture_cond="low"/>
+					<net name="current_raw[9]" cond="low" capture_cond="low"/>
+					<net name="current_raw[8]" cond="low" capture_cond="low"/>
+					<net name="current_raw[7]" cond="low" capture_cond="low"/>
+					<net name="current_raw[6]" cond="low" capture_cond="low"/>
+					<net name="current_raw[5]" cond="low" capture_cond="low"/>
+					<net name="current_raw[4]" cond="low" capture_cond="low"/>
+					<net name="current_raw[3]" cond="low" capture_cond="low"/>
+					<net name="current_raw[2]" cond="low" capture_cond="low"/>
+					<net name="current_raw[1]" cond="low" capture_cond="low"/>
+					<net name="current_raw[0]" cond="low" capture_cond="low"/>
+				</bus>
+				<net name="adc_valid" cond="high" capture_cond="any"/>
+				<net name="adc_error" cond="any" capture_cond="any"/>
+				<net name="adc_busy" cond="any" capture_cond="any"/>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="u_chipwatcher_trigger" position="3072" window_num="1" window_depth="4096">
+			<condition level="1" enabled="yes" type="basic_and" capture_type="basic_and"/>
+		</trigger>
+		<logic_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram" width="35" depth="4096">
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_45" wid="0X00000633" rid="0X00000633" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="30" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_39" wid="0X00000632" rid="0X00000632" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="25" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_15" wid="0X00000832" rid="0X00000832" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="5" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_21" wid="0X00000833" rid="0X00000833" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="10" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_33" wid="0X00000831" rid="0X00000831" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="20" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_9" wid="0X00000641" rid="0X00000641" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="0" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+			<phy_eram name="u_chipwatcher/ChipWatcher_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_27" wid="0X00000640" rid="0X00000640" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="5" depth="4096" address_offset="0" data_offset="15" address_step="1" num_section="1" section_size="35" width_per_section="5" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+		</logic_eram>
+	</instance>
+</chipwatcher>

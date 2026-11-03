@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:designConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:user="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:vendor>user</ipxact:vendor>
+    <ipxact:library>customized</ipxact:library>
+    <ipxact:name>designConfig_axi_system_HDMI_TX_0</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:viewConfiguration>
+        <ipxact:instanceName>hdmi_tx_c33abe7c933e_Inst</ipxact:instanceName>
+        <ipxact:view viewRef="hdmi_tx_rtl"/>
+    </ipxact:viewConfiguration>
+    <ipxact:vendorExtensions>
+        <user:displayname>hdmi_tx</user:displayname>
+        <user:ipGenVersion value="168007 2025/07/10">1.0</user:ipGenVersion>
+    </ipxact:vendorExtensions>
+</ipxact:designConfiguration>

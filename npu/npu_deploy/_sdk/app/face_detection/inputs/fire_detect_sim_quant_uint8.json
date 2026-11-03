@@ -1,0 +1,18 @@
+{
+	"input_params" : {
+		"r_mean" : 0.0,
+		"g_mean" : 0.0,
+		"b_mean" : 0.0,
+		"r_scale" : 0.0039210,
+		"g_scale" : 0.0039210,
+		"b_scale" : 0.0039210
+	},
+	"yolo_params" : {
+		"probThreshold": 0.20,
+		"nmsThreshold": 0.45,
+		"className": [
+			"smoke",
+			"fire"
+		]
+	}
+}

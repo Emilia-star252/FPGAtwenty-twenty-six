@@ -1,0 +1,75 @@
+{
+  "name": "dcdc_qac",
+  "input": {
+    "order": [
+      "v",
+      "i",
+      "duty"
+    ],
+    "shape": [
+      1,
+      8,
+      4,
+      4
+    ],
+    "divisors": [
+      48.0,
+      2.2,
+      95.0
+    ],
+    "layout": "NCHW；数据只放 [0:3, 0, 0]，其余补 0"
+  },
+  "output": {
+    "classes": [
+      "正常-轻载",
+      "正常-额定",
+      "重载-近限流",
+      "保护故障"
+    ],
+    "shape": [
+      1,
+      4,
+      1,
+      1
+    ],
+    "activation": "softmax"
+  },
+  "quant": {
+    "input_scale": 0.003921568859368563,
+    "pad_c": 8,
+    "pad_hw": 4,
+    "input_layout": "NCHW，只有 [0:3, 0, 0] 是有效值，其余补 0",
+    "layers": [
+      {
+        "w_scale": 0.04993176460266113,
+        "w_zp": 118,
+        "b_scale": 0.0001958108477992937,
+        "a_scale": 0.02040579542517662,
+        "a_zp": 0,
+        "o_scale": null,
+        "o_zp": null
+      },
+      {
+        "w_scale": 0.01580524444580078,
+        "w_zp": 167,
+        "b_scale": 0.0003225185791961849,
+        "a_scale": 0.07633192837238312,
+        "a_zp": 0,
+        "o_scale": null,
+        "o_zp": null
+      },
+      {
+        "w_scale": 0.015150961466133595,
+        "w_zp": 159,
+        "b_scale": 0.0011565020540729165,
+        "a_scale": null,
+        "a_zp": null,
+        "o_scale": 0.2596369981765747,
+        "o_zp": 0
+      }
+    ]
+  },
+  "acc_test": 1.0,
+  "agree_with_float": 0.9972222222222222,
+  "max_dev_vs_reference": 0.0
+}

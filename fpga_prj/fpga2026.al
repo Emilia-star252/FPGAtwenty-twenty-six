@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Version="3" Minor="2" Path="E:/FPGA_2026/fpga_prj">
+    <Project_Created_Time></Project_Created_Time>
+    <TD_Version>6.2.200067</TD_Version>
+    <Name>fpga2026</Name>
+    <HardWare>
+        <Family>DR1</Family>
+        <Device>DR1M90GEG400</Device>
+        <Speed>-2</Speed>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File Path="uisrc/01_rtl/rs485_uart.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="14"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/modbus_rtu_slave.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="15"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/rs485_dcdc_control.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="16"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/03_ip/AD7606/uispi7606.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="1"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/PI.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="4"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/PWM.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="5"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/DCDC_top.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="6"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/axi4lite_slave.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="7"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/adc_axis_source.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="10"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/adc_fdma_writer.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="11"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/npu_hp1_axi_adapter.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="12"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/hdmi_clock_reset.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="13"/>
+                </FileInfo>
+            </File>
+        </Verilog>
+        <System_Verilog>
+            <File Path="uisrc/01_rtl/axi4lite_slave_v11.sv">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="8"/>
+                </FileInfo>
+            </File>
+        </System_Verilog>
+        <ADC_FILE>
+            <File Path="uisrc/04_pin/fpga_pin.adc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="constraint_1"/>
+                    <Attr Name="CompileOrder" Val="1"/>
+                </FileInfo>
+            </File>
+        </ADC_FILE>
+        <SDC_FILE>
+            <File Path="uisrc/04_pin/fpga2026.sdc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="constraint_1"/>
+                    <Attr Name="CompileOrder" Val="2"/>
+                </FileInfo>
+            </File>
+        </SDC_FILE>
+        <IP_FILE>
+            <File Path="uisrc/03_ip/ChipWatcher_0/ChipWatcher_0.xml">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="2"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/03_ip/PLL_sys100/PLL_sys100.xml">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="3"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/03_ip/axi_system/axi_system.xml">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="9"/>
+                </FileInfo>
+            </File>
+        </IP_FILE>
+    </Source_Files>
+    <FileSets>
+        <FileSet Name="design_1" Type="DesignFiles">
+        </FileSet>
+        <FileSet Name="constraint_1" Type="ConstrainFiles">
+        </FileSet>
+    </FileSets>
+    <TOP_MODULE>
+        <LABEL>DCDC_top</LABEL>
+        <MODULE>DCDC_top</MODULE>
+        <CREATEINDEX>user</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+    </Property>
+    <Device_Settings>
+    </Device_Settings>
+    <Configurations>
+    </Configurations>
+    <Runs>
+        <Run Name="syn_1" Type="Synthesis" ConstraintSet="constraint_1" Description="" Active="true">
+            <Strategy Name="Default_Synthesis_Strategy">
+            </Strategy>
+            <UserParams>
+            </UserParams>
+        </Run>
+        <Run Name="phy_1" Type="PhysicalDesign" ConstraintSet="constraint_1" Description="" SynRun="syn_1" Active="true">
+            <Strategy Name="Default_PhysicalDesign_Strategy">
+            </Strategy>
+            <UserParams>
+            </UserParams>
+        </Run>
+    </Runs>
+    <Project_Settings>
+    </Project_Settings>
+</Project>

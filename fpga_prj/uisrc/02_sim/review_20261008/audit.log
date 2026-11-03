@@ -1,0 +1,84 @@
+# do run.do
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:35:35 on Oct 08,2026
+# vlog -sv -work work ../../01_rtl/PI.v ../../01_rtl/PWM.v ../../01_rtl/DCDC_top.v ../../03_ip/AD7606/uispi7606.v tb_review.sv 
+# -- Compiling module cntl_pi_fixed
+# -- Compiling module PWM
+# -- Compiling module DCDC_top
+# -- Compiling module uispi7606
+# -- Compiling module PLL_sys100
+# -- Compiling module ChipWatcher_0
+# -- Compiling module adc7606_model
+# -- Compiling module tb_review
+# 
+# Top level modules:
+# 	tb_review
+# End time: 11:35:36 on Oct 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_review 
+# Start time: 11:35:36 on Oct 08,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "DCDC_top(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "DCDC_top(fast)".
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_review(fast)
+# Loading work.DCDC_top(fast)
+# Loading work.PLL_sys100(fast)
+# Loading work.cntl_pi_fixed(fast)
+# Loading work.PWM(fast)
+# Loading work.uispi7606(fast)
+# Loading work.ChipWatcher_0(fast)
+# Loading work.DCDC_top(fast__1)
+# Loading work.PWM(fast__1)
+# Loading work.adc7606_model(fast)
+# Loading work.adc7606_model(fast__1)
+# Loading work.cntl_pi_fixed(fast__1)
+# Loading work.PWM(fast__2)
+# REPRO lower saturation: positive error=0.1, Kp~0.1, Ki=1, i1=0 output stays 0.05 for 8 updates
+# REPRO upper saturation: i1=6, error=-1, output stays 4 for 8 updates
+# PASS PI signed extrema, arithmetic and 3-clock accepted-to-valid latency
+# TRACE sample=1 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# TRACE sample=2 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=0 high_ticks=0 trigger_count=1
+# TRACE sample=3 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=1 high_ticks=1 trigger_count=1
+# TRACE sample=4 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=200 high_ticks=200 trigger_count=1
+# TRACE sample=5 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=2001 high_ticks=2001 trigger_count=1
+# TRACE sample=6 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=3800 high_ticks=3800 trigger_count=1
+# TRACE sample=7 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=4000 high_ticks=4000 trigger_count=1
+# TRACE sample=8 trigger_to_convst=50ns convst_to_valid=14290ns
+# PASS cascade sample_to_duty=110ns voltage=40 current=1 iref=4 duty=3000
+# PASS PWM requested=4095 high_ticks=4000 trigger_count=1
+# REPRO defaults: zero gains give Iref=0, duty_counts=200
+# REPRO ADC missing BUSY: error=1, ready=0, no new samples, PWM keeps 75 percent duty
+# PASS injected PLL loss immediately shuts down all configured PWM outputs
+# REPRO startup stuck BUSY: first conversion never valid, duty=0 but low-side output stays 1
+# AUDIT_PASS all assertions and issue reproductions completed
+# ** Note: $finish    : tb_review.sv(238)
+#    Time: 425256 ns  Iteration: 0  Instance: /tb_review
+# End time: 11:35:37 on Oct 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

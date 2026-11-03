@@ -1,0 +1,95 @@
+{
+  "features": [
+    "v_mean",
+    "i_mean",
+    "d_mean"
+  ],
+  "classes": [
+    "正常-轻载",
+    "正常-额定",
+    "重载-近限流",
+    "保护故障"
+  ],
+  "acc": {
+    "train": 0.75,
+    "val": 0.7694444444444445,
+    "test": 0.7944444444444444
+  },
+  "rule_baseline_test": 1.0,
+  "confusion_test": [
+    [
+      60,
+      18,
+      0,
+      5
+    ],
+    [
+      0,
+      94,
+      0,
+      0
+    ],
+    [
+      0,
+      51,
+      47,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      85
+    ]
+  ],
+  "per_class": [
+    {
+      "class": 0,
+      "name": "正常-轻载",
+      "support": 83,
+      "precision": 1.0,
+      "recall": 0.7229,
+      "f1": 0.8392
+    },
+    {
+      "class": 1,
+      "name": "正常-额定",
+      "support": 94,
+      "precision": 0.5767,
+      "recall": 1.0,
+      "f1": 0.7315
+    },
+    {
+      "class": 2,
+      "name": "重载-近限流",
+      "support": 98,
+      "precision": 1.0,
+      "recall": 0.4796,
+      "f1": 0.6483
+    },
+    {
+      "class": 3,
+      "name": "保护故障",
+      "support": 85,
+      "precision": 0.9444,
+      "recall": 1.0,
+      "f1": 0.9714
+    }
+  ],
+  "class_counts": [
+    605,
+    623,
+    690,
+    482
+  ],
+  "missing_classes": [],
+  "n": {
+    "train": 1680,
+    "val": 360,
+    "test": 360
+  },
+  "epochs": 400,
+  "best_epoch": 380,
+  "activation": false,
+  "csv": "D:\\deepseek\\work\\npu_train\\out\\dataset.csv"
+}
